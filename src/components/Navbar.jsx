@@ -15,7 +15,7 @@ export default function Navbar({ setPage }) {
         <button
           key={item.id}
           onClick={() => setPage(item.id)}
-          className="hover:text-yellow-400 transition-colors duration-200"
+          className="hover:text-blue-400 transition-colors duration-200 cursor-pointer"
         >
           {item.name}
         </button>
