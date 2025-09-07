@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Html, useGLTF } from "@react-three/drei";
-import HeroPage from "./HeroPage";
+import HomePage from "../pages/HomePage";
 
 export default function LaptopModel(props) {
   const group = useRef();
@@ -23,7 +23,7 @@ export default function LaptopModel(props) {
           <mesh material={materials["matte.001"]} geometry={nodes["Cube008_1"].geometry} />
           <mesh geometry={nodes["Cube008_2"].geometry}>
             <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.6]} transform occlude>
-              <HeroPage />
+              <HomePage />
             </Html>
           </mesh>
         </group>

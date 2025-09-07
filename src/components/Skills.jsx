@@ -2,7 +2,7 @@ import React from "react";
 
 const skills = ["React", "Three.js", "Tailwind CSS", "Node.js", "Express", "Figma"];
 
-export default function PortfolioSkills() {
+export default function Skills() {
   return (
     <div className="mb-4 text-left">
       <h2 className="font-semibold text-gray-800 mb-2">Skills</h2>

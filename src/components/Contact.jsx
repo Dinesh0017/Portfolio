@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function PortfolioContact() {
+export default function Contact() {
   return (
     <div className="text-left">
       <h2 className="font-semibold text-gray-800 mb-2">Contact</h2>

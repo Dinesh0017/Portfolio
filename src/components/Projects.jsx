@@ -6,7 +6,7 @@ const projects = [
   { name: "Flutter CRUD App", link: "#" },
 ];
 
-export default function PortfolioProjects() {
+export default function Projects() {
   return (
     <div className="mb-4 text-left">
       <h2 className="font-semibold text-gray-800 mb-2">Projects</h2>
