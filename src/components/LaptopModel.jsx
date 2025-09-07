@@ -7,12 +7,11 @@ export default function LaptopModel(props) {
   const group = useRef();
   const { nodes, materials } = useGLTF("/mac-draco.glb");
 
- useFrame(({ clock }) => {
+  useFrame(({ clock }) => {
     const t = clock.getElapsedTime();
     group.current.rotation.x = 0;
-    group.current.rotation.y = Math.sin(t / 4) / 15; // subtle float
-    group.current.position.y = -1.4 + Math.sin(t / 2) / 50; // lower position
-    
+    group.current.rotation.y = Math.sin(t / 4) / 15;
+    group.current.position.y = -1.4 + Math.sin(t / 2) / 50;
   });
 
   return (
@@ -22,7 +21,7 @@ export default function LaptopModel(props) {
           <mesh material={materials.aluminium} geometry={nodes["Cube008"].geometry} />
           <mesh material={materials["matte.001"]} geometry={nodes["Cube008_1"].geometry} />
           <mesh geometry={nodes["Cube008_2"].geometry}>
-            <Html className="content" rotation-x={-Math.PI / 2} position={[0, 0.05, -0.6]} transform occlude>
+            <Html rotation-x={-Math.PI / 2} position={[0, 0.05, -0.6]} transform occlude>
               <HomePage />
             </Html>
           </mesh>

@@ -1,29 +1,25 @@
 import React from "react";
 
-// Array of navigation items
 const navItems = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", id: "home" },
+  { name: "About", id: "about" },
+  { name: "Skills", id: "skills" },
+  { name: "Projects", id: "projects" },
+  { name: "Contact", id: "contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ setPage }) {
   return (
-    <nav className="bg-blue-950 rounded-md mb-4 p-2 text-white text-xs">
-      <ul className="flex justify-around">
-        {navItems.map((item) => (
-          <li key={item.name}>
-            <a
-              href={item.href}
-              className="hover:text-white transition-colors duration-200"
-            >
-              {item.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <nav className="flex justify-around bg-blue-950 text-white rounded text-[9px] p-1">
+      {navItems.map((item) => (
+        <button
+          key={item.id}
+          onClick={() => setPage(item.id)}
+          className="hover:text-yellow-400 transition-colors duration-200"
+        >
+          {item.name}
+        </button>
+      ))}
     </nav>
   );
 }

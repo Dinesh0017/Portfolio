@@ -18,6 +18,7 @@ export default function App() {
         <ContactShadows position={[0, -1, 0]} scale={10} blur={1.5} far={10} />
         <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={Math.PI / 2.5} maxPolarAngle={Math.PI / 2.5} />
       </Canvas>
+
     </div>
   );
 }
