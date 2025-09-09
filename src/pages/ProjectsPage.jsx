@@ -4,55 +4,65 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function ProjectsPage() {
   return (
-    <div className="p-4">
-      <h2 className="text-lg font-bold text-indigo-600 mb-3 text-center">
+    <div className="p-2">
+      <h2 className="text-md font-bold text-black mb-2 text-left">
         My Projects
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+      <div className=" mt-2  ">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-blue-200 shadow-md rounded-lg overflow-hidden border hover:shadow-xl transition"
+            className="bg-white mb-4 shadow-lg rounded-lg overflow-hidden border  border-gray-200  hover:shadow-2xl transition transform hover:-translate-y-1"
           >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full h-28 object-cover"
-            />
-            <div className="p-2">
-              <h3 className="text-sm font-semibold text-gray-900">
+            <div className="relative">
+              <div className="flex justify-center items-center p-2">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-28 w-auto object-contain "
+                />
+              </div>
+
+              <div className="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition flex items-center justify-center">
+                <a
+                  href={project.demoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-indigo-600 text-white px-3 py-1 rounded-sm text-xs flex items-center gap-1 hover:bg-indigo-700"
+                >
+                  <FaExternalLinkAlt className="text-xs" /> Live Demo
+                </a>
+              </div>
+            </div>
+            <div className="p-4">
+              <h3 className="text-base font-semibold text-gray-800">
                 {project.title}
               </h3>
-              <p className="text-[10px] text-gray-600 mt-1">
+              <p className="text-xs text-gray-500 mt-1 line-clamp-2">
                 {project.description}
               </p>
-              <div className="flex flex-wrap gap-1 mt-1">
+
+              {/* Tech stack badges */}
+              <div className="flex flex-wrap gap-1 mt-2">
                 {project.tech.map((t, i) => (
                   <span
                     key={i}
-                    className="bg-indigo-100 text-indigo-600 text-[9px] px-2 py-0.5 rounded-full"
+                    className=" text-indigo-600 text-[10px] px-2 py-0.5 rounded-full border-1 border-indigo-100 "
                   >
                     {t}
                   </span>
                 ))}
               </div>
-              <div className="flex justify-between mt-2 text-[10px]">
-                <a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-indigo-600 hover:underline"
-                >
-                  <FaExternalLinkAlt className="text-xs" />
-                  Live Demo
-                </a>
+
+              {/* Links */}
+              <div className="flex justify-between items-center mt-4 text-xs">
                 <a
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-gray-700 hover:underline"
+                  className="flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition"
                 >
-                  <FaGithub className="text-xs" />
+                  <FaGithub className="text-sm" />
                   GitHub
                 </a>
               </div>

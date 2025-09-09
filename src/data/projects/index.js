@@ -6,6 +6,7 @@ import brainBuddyImg from "../../assets/project-images/BrainBuddy.jpg";
 import sciLabImg from "../../assets/project-images/SciLab360.png";
 import goGroImg from "../../assets/project-images/GoGro.png";
 
+
 const projects = [
   {
     id: 1,

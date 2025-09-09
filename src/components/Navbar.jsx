@@ -10,7 +10,7 @@ const navItems = [
 
 export default function Navbar({ setPage }) {
   return (
-    <nav className="flex justify-around bg-blue-950 text-white rounded text-[9px] p-1">
+    <nav className="flex justify-around bg-blue-950 text-white rounded text-[0.6rem] p-1">
       {navItems.map((item) => (
         <button
           key={item.id}
