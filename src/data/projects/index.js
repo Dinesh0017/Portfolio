@@ -1,5 +1,11 @@
-
 // src/data/projects/index.js
+import portfolioImg from "../../assets/project-images/PortfolioWebsite.png";
+import skillLinkImg from "../../assets/project-images/SkillLink.png";
+import carRentalImg from "../../assets/project-images/carRentalWeb.png";
+import brainBuddyImg from "../../assets/project-images/BrainBuddy.jpg";
+import sciLabImg from "../../assets/project-images/SciLab360.png";
+import goGroImg from "../../assets/project-images/GoGro.png";
+
 const projects = [
   {
     id: 1,
@@ -7,7 +13,7 @@ const projects = [
     description:
       "A 3D interactive personal portfolio built with React, Tailwind CSS, and Three.js to showcase my skills and projects.",
     tech: ["React", "Tailwind", "Three.js"],
-    image: "src/assets/project-images/PortfolioWebsite.png",
+    image: portfolioImg,
     demoLink: "https://your-portfolio-link.com",
     githubLink: "https://github.com/yourusername/portfolio",
   },
@@ -17,7 +23,7 @@ const projects = [
     description:
       "Full-stack platform where learners and experts connect. Includes responsive UI, authentication, service pages, and expert listings. Designed in Figma and developed with React + Tailwind.",
     tech: ["React", "Tailwind", "Figma"],
-    image: "src/assets/project-images/SkillLink.png",
+    image: skillLinkImg,
     demoLink: "https://your-skilllink-demo.com",
     githubLink: "https://github.com/yourusername/skilllink",
   },
@@ -27,7 +33,7 @@ const projects = [
     description:
       "Responsive car rental website with multiple pages (Home, Fleet, Contact, About), built using Next.js and Tailwind CSS. Designed in Figma.",
     tech: ["Next.js", "React", "Tailwind", "Figma"],
-    image: "src/assets/project-images/carRentalWeb.png",
+    image: carRentalImg,
     demoLink: "https://your-car-rental-demo.com",
     githubLink: "https://github.com/yourusername/car-rental",
   },
@@ -37,7 +43,7 @@ const projects = [
     description:
       "Flutter app for students to organize study schedules with smart reminders and task management.",
     tech: ["Flutter", "Dart", "Firebase"],
-    image: "/src/assets/project-images/BrainBuddy.jpg",
+    image: brainBuddyImg,
     demoLink: "https://your-brainbuddy-demo.com",
     githubLink: "https://github.com/yourusername/brainbuddy",
   },
@@ -47,7 +53,7 @@ const projects = [
     description:
       "An educational web app with interactive Physics, Chemistry, and ICT simulations, calculators, and puzzle games.",
     tech: ["Next.js", "React", "Tailwind", "Three.js"],
-    image: "/src/assets/project-images/SciLab360.png",
+    image: sciLabImg,
     demoLink: "https://your-scilab360-demo.com",
     githubLink: "https://github.com/yourusername/scilab360",
   },
@@ -57,7 +63,7 @@ const projects = [
     description:
       "Mobile app for managing grocery lists, budgets, and dish-based ingredient tracking with a smooth shopping experience.",
     tech: ["Flutter", "Dart", "SQLite"],
-    image: "/src/assets/project-images/GoGro.png",
+    image: goGroImg,
     demoLink: "https://your-gogro-demo.com",
     githubLink: "https://github.com/yourusername/gogro",
   },

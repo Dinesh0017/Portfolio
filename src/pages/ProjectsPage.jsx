@@ -1,5 +1,5 @@
 import React from "react";
-import projects from "../data/projects";
+import projects from "../data/projects/index";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 export default function ProjectsPage() {
@@ -8,20 +8,17 @@ export default function ProjectsPage() {
       <h2 className="text-lg font-bold text-indigo-600 mb-3 text-center">
         My Projects
       </h2>
-      <div className="grid grid-cols-1 gap-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {projects.map((project) => (
           <div
             key={project.id}
             className="bg-blue-200 shadow-md rounded-lg overflow-hidden border hover:shadow-xl transition"
           >
-            {/* Image */}
             <img
               src={project.image}
               alt={project.title}
-              className="w-auto h-28 object-cover mx-auto mt-2 "
+              className="w-full h-28 object-cover"
             />
-
-            {/* Content */}
             <div className="p-2">
               <h3 className="text-sm font-semibold text-gray-900">
                 {project.title}
@@ -29,8 +26,6 @@ export default function ProjectsPage() {
               <p className="text-[10px] text-gray-600 mt-1">
                 {project.description}
               </p>
-
-              {/* Tech Stack */}
               <div className="flex flex-wrap gap-1 mt-1">
                 {project.tech.map((t, i) => (
                   <span
@@ -41,8 +36,6 @@ export default function ProjectsPage() {
                   </span>
                 ))}
               </div>
-
-              {/* Links */}
               <div className="flex justify-between mt-2 text-[10px]">
                 <a
                   href={project.demoLink}
@@ -53,7 +46,6 @@ export default function ProjectsPage() {
                   <FaExternalLinkAlt className="text-xs" />
                   Live Demo
                 </a>
-
                 <a
                   href={project.githubLink}
                   target="_blank"
