@@ -1,10 +1,10 @@
 // src/data/projects/index.js
-import portfolioImg from "../../assets/project-images/PortfolioWebsite.png";
-import skillLinkImg from "../../assets/project-images/SkillLink.png";
-import carRentalImg from "../../assets/project-images/carRentalWeb.png";
-import brainBuddyImg from "../../assets/project-images/BrainBuddy.jpg";
-import sciLabImg from "../../assets/project-images/SciLab360.png";
-import goGroImg from "../../assets/project-images/GoGro.png";
+import portfolioImg from "../../assets/projectImages/PortfolioWebsite.png";
+import skillLinkImg from "../../assets/projectImages/SkillLink.png";
+import carRentalImg from "../../assets/projectImages/carRentalWeb.png";
+import brainBuddyImg from "../../assets/projectImages/BrainBuddy.jpg";
+import sciLabImg from "../../assets/projectImages/SciLab360.png";
+import goGroImg from "../../assets/projectImages/GoGro.png";
 
 
 const projects = [
