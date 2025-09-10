@@ -9,9 +9,9 @@ export default function LaptopModel(props) {
 
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();
-    group.current.rotation.x = 0;
-    group.current.rotation.y = Math.sin(t / 4) / 15;
-    group.current.position.y = -1.4 + Math.sin(t / 2) / 50;
+    group.current.rotation.x = 0.015 * Math.sin(t / 15)/50;
+    group.current.rotation.y = Math.sin(t / 2) / 15;
+    group.current.position.y = -1.5 + Math.sin(t / 2) / 50;
   });
 
   return (
