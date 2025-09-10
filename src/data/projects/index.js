@@ -3,7 +3,7 @@ import portfolioImg from "../../assets/projectImages/PortfolioWebsite.png";
 import skillLinkImg from "../../assets/projectImages/SkillLink.png";
 import carRentalImg from "../../assets/projectImages/carRentalWeb.png";
 import brainBuddyImg from "../../assets/projectImages/BrainBuddy.jpg";
-import sciLabImg from "../../assets/projectImages/SciLab360.png";
+import sciLabImg from "../../assets/projectImages/sciLab360.png";
 import goGroImg from "../../assets/projectImages/GoGro.png";
 
 
