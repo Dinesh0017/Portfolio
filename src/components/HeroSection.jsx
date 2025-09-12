@@ -9,18 +9,18 @@ export default function HeroSection() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center text-center mt-1">
         {/* Name with Gradient */}
-        <h1 className="text-xl sm:text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500">
+        <h1 className="text-2xl  font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600">
           Dinesh Rathnasiri
         </h1>
 
         {/* Animated Tagline */}
-        <p className="text-gray-800 text-[12px] animate-pulse">
+        <p className="text-gray-800 text-[12px] animate-pulse ">
           Frontend Developer & UI/UX Designer
         </p>
 
         {/* Profile Image Frame */}
         <div className="mt-2 relative">
-          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 blur-md opacity-50"></div>
+          <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 blur-md opacity-50"></div>
           <img
             src={myImg}
             alt="Profile"
@@ -45,13 +45,13 @@ export default function HeroSection() {
         </div>
 
         {/* Accent line */}
-        <div className="w-16 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 rounded-full mt-1"></div>
+        <div className="w-16 h-1 bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 rounded-full mt-1"></div>
 
         {/* Resume Download Button */}
         <a
           href={resumePDF}
           download="Dinesh_Rathnasiri_Resume.pdf"
-          className="mt-2 px-4 text-sm py-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
+          className="mt-2 px-4 text-sm py-1 bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
         >
           Download Resume
         </a>

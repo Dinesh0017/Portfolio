@@ -11,8 +11,6 @@ export default function Header() {
     <>
       <HeroSection />
       <Skills />
-      <Projects />
-      <Contact />
     </>
   );
 }

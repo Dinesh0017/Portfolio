@@ -3,10 +3,8 @@ import React from "react";
 const navItems = [
   { name: "Home", id: "home" },
   { name: "About", id: "about" },
-  { name: "Skills", id: "skills" },
   { name: "Projects", id: "projects" },
   { name: "Contact", id: "contact" },
-  {name: "Resume", id: "resume" }
 ];
 
 export default function Navbar({ setPage }) {

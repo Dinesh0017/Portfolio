@@ -1,28 +1,41 @@
 import React from "react";
 
-const projects = [
-  { name: "3D Portfolio Site", link: "#" },
-  { name: "E-commerce App", link: "#" },
-  { name: "Flutter CRUD App", link: "#" },
-];
+export default function Projects({ setPage }) {
+  const projects = [
+    { id: 1, title: "Portfolio Website", demoLink: "http://dineshrathnasiri.netlify.app" },
+    { id: 2, title: "SkillLink – Learning & Skill Sharing Platform", demoLink: "https://your-skilllink-demo.com" },
+    { id: 3, title: "Car Rental Web Platform", demoLink: "https://your-car-rental-demo.com" },
+  ];
 
-export default function Projects() {
   return (
-    <div className="mb-4 text-left">
-      <h2 className="font-semibold text-gray-800 mb-2">Projects</h2>
-      <ul className="text-sm space-y-1">
+    <div className="mb-6 text-left">
+      <h2 className="text-md font-bold text-black">Projects</h2>
+      <hr className="border-gray-300 mb-3" />
+
+      <ul className="text-xs space-y-2">
         {projects.map((project) => (
-          <li key={project.name}>
+          <li key={project.id}>
             <a
-              href={project.link}
+              href={project.demoLink}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-indigo-600 hover:underline"
             >
-              {project.name}
+              {project.title}
             </a>
           </li>
         ))}
       </ul>
+
+      {/* Instead of router → use setPage */}
+      <div className="">
+        <button
+          onClick={() => setPage("projects")}
+          className="mt-2 cursor-pointer px-4 text-xs py-1 bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
+        >
+          More Projects...
+        </button>
+      </div>
     </div>
   );
 }
-

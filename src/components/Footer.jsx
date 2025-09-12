@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="mt-6 border-t border-gray-300 pt-3 text-center text-xs text-gray-600">
+    <footer className="mt-6 border-t border-gray-300 pt-3 text-center text-xs text-gray-700">
       <p>
         © {new Date().getFullYear()} Dinesh Rathnasiri. All rights reserved.
       </p>

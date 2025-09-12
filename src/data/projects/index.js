@@ -15,7 +15,7 @@ const projects = [
       "A 3D interactive personal portfolio built with React, Tailwind CSS, and Three.js to showcase my skills and projects.",
     tech: ["React", "Tailwind", "Three.js"],
     image: portfolioImg,
-    demoLink: "https://your-portfolio-link.com",
+    demoLink: "http://dineshrathnasiri.netlify.app",
     githubLink: "https://github.com/yourusername/portfolio",
   },
   {
