@@ -18,7 +18,7 @@ export default function Skills() {
       <div className="space-y-4 ">
         {Object.entries(skills).map(([category, items]) => (
           <div key={category}>
-            <h3 className="font-bold text-sm text-blue-950 mb-1">
+            <h3 className="font-bold text-sm text-blue-900 mb-1">
               {category}
             </h3>
             <div className="flex flex-wrap gap-1">

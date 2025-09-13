@@ -52,7 +52,7 @@ export default function ContactPage() {
         <h2 className="text-md font-bold text-black text-center mb-3">
           Get in Touch
         </h2>
-        <p className="text-gray-500 text-center text-xs mb-8">
+        <p className="text-gray-600 text-center text-xs mb-8">
           Fill out the form below and I’ll get back to you as soon as possible.
         </p>
 
@@ -109,7 +109,7 @@ export default function ContactPage() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-indigo-600 text-white py-2 rounded-lg font-medium hover:bg-indigo-700 transition transform hover:-translate-y-0.5 shadow-md cursor-pointer text-xs"
+            className="w-full px-4 text-sm py-1 bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
             disabled={loading}
           >
             {loading ? "Sending..." : "Send Message"}
