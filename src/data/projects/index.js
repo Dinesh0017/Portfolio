@@ -27,7 +27,7 @@ const projects = [
     image: skillLinkImg,
     demoLink: "https://skill-link-iota.vercel.app/",
     githubLink: "https://github.com/Dinesh0017/skillLink",
-    figmaLink: "https://www.figma.com/file/your-figma-file",
+    figmaLink: "https://www.figma.com/design/d4XEVitT3BXA2hHmUzWEeM/skill-link?node-id=0-1&t=cFJCPPS8Fyz6iKGb-1",
   },
   {
     id: 3,
@@ -46,7 +46,7 @@ const projects = [
       "Flutter app for students to organize study schedules with smart reminders and task management.",
     tech: ["Flutter", "Dart", "Firebase"],
     image: brainBuddyImg,
-    demoLink: "https://your-brainbuddy-demo.com",
+    figmaLinkLink: "https://www.figma.com/design/WIy8YljNflcyJJvwZy87ox/Study-Buddy?node-id=0-1&t=24L73VEGntpBHa9p-1",
     githubLink: "https://github.com/Dinesh0017/brain_buddy",
   },
   {
@@ -66,8 +66,8 @@ const projects = [
       "Mobile app for managing grocery lists, budgets, and dish-based ingredient tracking with a smooth shopping experience.",
     tech: ["Figma"],
     image: goGroImg,
-    demoLink: "https://your-gogro-demo.com",
-    figmaLink: "https://www.figma.com/file/your-figma-file",
+    demoLink: "https://www.figma.com/proto/g3c8SUTMbnjH5VcNgGVQfX/GoGro?page-id=0%3A1&node-id=9-718&starting-point-node-id=9%3A718&t=t5q20f6oC8L9IbFq-1",
+    figmaLink: "https://www.figma.com/design/g3c8SUTMbnjH5VcNgGVQfX/GoGro?node-id=0-1&t=VpNvJWghTgsdD20E-1",
   },
 ];
 
