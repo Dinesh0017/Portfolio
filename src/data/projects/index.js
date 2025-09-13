@@ -16,7 +16,7 @@ const projects = [
     tech: ["React", "TailwindCSS", "Three.js", "EmailJS"],
     image: portfolioImg,
     demoLink: "http://dineshrathnasiri.netlify.app",
-    githubLink: "https://github.com/yourusername/portfolio",
+    githubLink: "https://github.com/Dinesh0017/Portfolio",
   },
   {
     id: 2,
@@ -25,8 +25,9 @@ const projects = [
       "Full-stack platform where learners and experts connect. Includes responsive UI, authentication, service pages, and expert listings. Designed in Figma and developed with React + Tailwind.",
     tech: ["React", "TailwindCSS", "Figma"],
     image: skillLinkImg,
-    demoLink: "https://your-skilllink-demo.com",
-    githubLink: "https://github.com/yourusername/skilllink",
+    demoLink: "https://skill-link-iota.vercel.app/",
+    githubLink: "https://github.com/Dinesh0017/skillLink",
+    figmaLink: "https://www.figma.com/file/your-figma-file",
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ const projects = [
     tech: ["Next.js", "React", "TailwindCSS", "Figma"],
     image: carRentalImg,
     demoLink: "https://your-car-rental-demo.com",
-    githubLink: "https://github.com/yourusername/car-rental",
+    githubLink: "https://github.com/Dinesh0017/car-rent-platform",
   },
   {
     id: 4,
@@ -46,7 +47,7 @@ const projects = [
     tech: ["Flutter", "Dart", "Firebase"],
     image: brainBuddyImg,
     demoLink: "https://your-brainbuddy-demo.com",
-    githubLink: "https://github.com/yourusername/brainbuddy",
+    githubLink: "https://github.com/Dinesh0017/brain_buddy",
   },
   {
     id: 5,
@@ -56,7 +57,7 @@ const projects = [
     tech: ["Next.js", "React", "TailwindCSS"],
     image: sciLabImg,
     demoLink: "https://your-scilab360-demo.com",
-    githubLink: "https://github.com/yourusername/scilab360",
+    githubLink: "https://github.com/Dinesh0017/sci-lab",
   },
   {
     id: 6,
@@ -66,7 +67,7 @@ const projects = [
     tech: ["Figma"],
     image: goGroImg,
     demoLink: "https://your-gogro-demo.com",
-    githubLink: "https://github.com/yourusername/gogro",
+    figmaLink: "https://www.figma.com/file/your-figma-file",
   },
 ];
 

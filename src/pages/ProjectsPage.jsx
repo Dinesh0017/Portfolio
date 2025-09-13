@@ -1,6 +1,7 @@
 import React from "react";
 import projects from "../data/projects/index";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa6"; // Import Figma icon
 
 export default function ProjectsPage() {
   return (
@@ -8,32 +9,37 @@ export default function ProjectsPage() {
       <h2 className="text-md font-bold text-black mb-2 text-left">
         My Projects
       </h2>
-      <div className=" mt-2  ">
+      <div className="mt-2">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="bg-white mb-4 shadow-lg rounded-lg overflow-hidden border  border-gray-200  hover:shadow-2xl transition transform hover:-translate-y-1"
+            className="bg-white mb-4 shadow-lg rounded-lg overflow-hidden border border-gray-200 hover:shadow-2xl transition transform hover:-translate-y-1"
           >
+            {/* Project Image + Hover Demo */}
             <div className="relative">
               <div className="flex justify-center items-center p-2">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-28 w-auto object-contain "
+                  className="h-28 w-auto object-contain"
                 />
               </div>
 
-              <div className="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition flex items-center justify-center">
-                <a
-                  href={project.demoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-indigo-800 text-white px-3 py-1 rounded-sm text-xs flex items-center gap-1 hover:bg-indigo-900"
-                >
-                  <FaExternalLinkAlt className="text-xs" /> Live Demo
-                </a>
-              </div>
+              {project.demoLink && (
+                <div className="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition flex items-center justify-center">
+                  <a
+                    href={project.demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-indigo-800 text-white px-3 py-1 rounded-sm text-xs flex items-center gap-1 hover:bg-indigo-900"
+                  >
+                    <FaExternalLinkAlt className="text-xs" /> Live Demo
+                  </a>
+                </div>
+              )}
             </div>
+
+            {/* Project Info */}
             <div className="p-4">
               <h3 className="text-base font-semibold text-gray-800">
                 {project.title}
@@ -47,24 +53,38 @@ export default function ProjectsPage() {
                 {project.tech.map((t, i) => (
                   <span
                     key={i}
-                    className=" text-indigo-600 text-[10px] px-2 py-0.5 rounded-full border-1 border-indigo-100 "
+                    className="text-indigo-600 text-[10px] px-2 py-0.5 rounded-full border border-indigo-100"
                   >
                     {t}
                   </span>
                 ))}
               </div>
 
-              {/* Links */}
-              <div className="flex justify-between items-center mt-4 text-xs">
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition"
-                >
-                  <FaGithub className="text-sm" />
-                  GitHub
-                </a>
+              {/* Links Section (Dynamic) */}
+              <div className="flex gap-4 items-center mt-4 text-xs">
+                {project.githubLink && (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-gray-600 hover:text-indigo-600 transition"
+                  >
+                    <FaGithub className="text-sm" />
+                    GitHub
+                  </a>
+                )}
+
+                {project.figmaLink && (
+                  <a
+                    href={project.figmaLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 text-gray-600 hover:text-pink-500 transition"
+                  >
+                    <FaFigma className="text-sm" />
+                    Figma
+                  </a>
+                )}
               </div>
             </div>
           </div>
