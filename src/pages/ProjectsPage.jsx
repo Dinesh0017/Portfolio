@@ -28,7 +28,7 @@ export default function ProjectsPage() {
                   href={project.demoLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-indigo-600 text-white px-3 py-1 rounded-sm text-xs flex items-center gap-1 hover:bg-indigo-700"
+                  className="bg-indigo-800 text-white px-3 py-1 rounded-sm text-xs flex items-center gap-1 hover:bg-indigo-900"
                 >
                   <FaExternalLinkAlt className="text-xs" /> Live Demo
                 </a>

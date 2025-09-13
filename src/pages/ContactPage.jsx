@@ -109,7 +109,7 @@ export default function ContactPage() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full px-4 text-sm py-1 bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-200"
+            className="w-full px-4 text-sm py-1 bg-gradient-to-r from-blue-900 via-purple-600 to-pink-600 text-white font-semibold rounded-lg shadow-md hover:scale-105 transition-transform duration-200 cursor-pointer"
             disabled={loading}
           >
             {loading ? "Sending..." : "Send Message"}

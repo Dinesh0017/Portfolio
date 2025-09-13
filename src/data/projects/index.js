@@ -13,7 +13,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A 3D interactive personal portfolio built with React, Tailwind CSS, and Three.js to showcase my skills and projects.",
-    tech: ["React", "Tailwind", "Three.js"],
+    tech: ["React", "TailwindCSS", "Three.js", "EmailJS"],
     image: portfolioImg,
     demoLink: "http://dineshrathnasiri.netlify.app",
     githubLink: "https://github.com/yourusername/portfolio",
@@ -23,7 +23,7 @@ const projects = [
     title: "SkillLink – Learning & Skill Sharing Platform",
     description:
       "Full-stack platform where learners and experts connect. Includes responsive UI, authentication, service pages, and expert listings. Designed in Figma and developed with React + Tailwind.",
-    tech: ["React", "Tailwind", "Figma"],
+    tech: ["React", "TailwindCSS", "Figma"],
     image: skillLinkImg,
     demoLink: "https://your-skilllink-demo.com",
     githubLink: "https://github.com/yourusername/skilllink",
@@ -33,7 +33,7 @@ const projects = [
     title: "Car Rental Web Platform",
     description:
       "Responsive car rental website with multiple pages (Home, Fleet, Contact, About), built using Next.js and Tailwind CSS. Designed in Figma.",
-    tech: ["Next.js", "React", "Tailwind", "Figma"],
+    tech: ["Next.js", "React", "TailwindCSS", "Figma"],
     image: carRentalImg,
     demoLink: "https://your-car-rental-demo.com",
     githubLink: "https://github.com/yourusername/car-rental",
@@ -53,7 +53,7 @@ const projects = [
     title: "SciLab360 – Virtual Science Lab",
     description:
       "An educational web app with interactive Physics, Chemistry, and ICT simulations, calculators, and puzzle games.",
-    tech: ["Next.js", "React", "Tailwind", "Three.js"],
+    tech: ["Next.js", "React", "TailwindCSS"],
     image: sciLabImg,
     demoLink: "https://your-scilab360-demo.com",
     githubLink: "https://github.com/yourusername/scilab360",
@@ -63,7 +63,7 @@ const projects = [
     title: "GoGro – Grocery List & Budget App",
     description:
       "Mobile app for managing grocery lists, budgets, and dish-based ingredient tracking with a smooth shopping experience.",
-    tech: ["Flutter", "Dart", "SQLite"],
+    tech: ["Figma"],
     image: goGroImg,
     demoLink: "https://your-gogro-demo.com",
     githubLink: "https://github.com/yourusername/gogro",
