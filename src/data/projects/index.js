@@ -13,7 +13,7 @@ const projects = [
     title: "Portfolio Website",
     description:
       "A 3D interactive personal portfolio built with React, Tailwind CSS, and Three.js to showcase my skills and projects.",
-    tech: ["React", "TailwindCSS", "Three.js", "EmailJS"],
+    tech: ["React", "TailwindCSS", "Three.js", "EmailJS", "drei"],
     image: portfolioImg,
     demoLink: "http://dineshrathnasiri.netlify.app",
     githubLink: "https://github.com/Dinesh0017/Portfolio",
