@@ -1,7 +1,7 @@
 import React from "react";
 
 const skills = {
-  "Frontend Frameworks": ["React", "Next.js", "React Native", "Flutter","Three.js"],
+  "Frontend Frameworks & Libraries": ["React", "Next.js", "React Native", "Flutter","Three.js"],
   "Programming Languages": ["JavaScript","TypeScript","Dart", "Python", "Java", "C","C#"],
   "Styling": ["Tailwind CSS", "CSS3", "Responsive Design"],
   "Backend Technologies": ["Node.js", "Java Servlets"],
